@@ -41,7 +41,7 @@ def main():
   
     print "When we started our value were as follows: a(0) = {0}, a(1) = {1}, error = {2}".format(initial_a_zero, initial_a_one, cost_function(initial_a_zero, initial_a_one, data))
     [a_zero, a_one] = gradient_descent_runner(data, initial_a_zero, initial_a_one, learning_rate, num_iterations)
-    print "After {0} iterations, we found got a(0) = {1}, a(1) = {2}, error = {3}".format(num_iterations, a_zero, a_one, cost_function(a_zero, a_one, data))
+    print "After {0} iterations, we got a(0) = {1}, a(1) = {2}, error = {3}".format(num_iterations, a_zero, a_one, cost_function(a_zero, a_one, data))
 
 
 if __name__ == '__main__':
